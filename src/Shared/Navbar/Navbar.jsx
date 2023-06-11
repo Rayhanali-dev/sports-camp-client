@@ -3,11 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 
 const Navbar = () => {
-
-    const {user} = useContext(AuthContext)
-
+    const { user, loggedOut } = useContext(AuthContext);
     return (
-        <div className='bg-slate-600'>
+        <div className='absolute bg-black opacity-40 py-5 top-0 w-full z-10'>
             <div className="navbar max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -20,7 +18,7 @@ const Navbar = () => {
                             <li><NavLink to={`/`} className='text-white'>Item 3</NavLink></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Logo</a>
+                    <a className="btn btn-ghost text-white normal-case text-xl">Logo</a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -29,9 +27,9 @@ const Navbar = () => {
                         <li><NavLink to={`/`} className='text-white text-lg bg-transparent'>Instructors</NavLink></li>
                         {user ? <>
                             <li>
-                                <img src="" className='w-8 h-8 bg-slate-500 rounded-full' alt="" />
+                                <img src={user.photoURL} className='w-12 h-12 bg-slate-500 rounded-full' alt="" />
                             </li>
-                            <NavLink to={`/register`} className="btn">Log Out</NavLink>
+                            <button onClick={loggedOut} className="btn ml-4">Log Out</button>
                         </> : <NavLink to={`/login`} className="btn">Login</NavLink>}
                     </ul>
                 </div>
