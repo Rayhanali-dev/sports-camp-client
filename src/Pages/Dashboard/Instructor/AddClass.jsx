@@ -62,7 +62,7 @@ function AddClass() {
     return (
         <>
             <Helmet>
-                <title>Add a class | Nexus Sports</title>
+                <title>Add a class | Sports Camp</title>
             </Helmet>
             <div className="w-full px-10 mb-5">
                 <div className="my-4">

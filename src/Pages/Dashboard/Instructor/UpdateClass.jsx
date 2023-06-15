@@ -46,7 +46,7 @@ function UpdateClass() {
     return (
         <>
             <Helmet>
-                <title>Update Class | Nexus Sports</title>
+                <title>Update Class | Sports Camp</title>
             </Helmet>
 
             <div className="w-full px-10 mb-5">

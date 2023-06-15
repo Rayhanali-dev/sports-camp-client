@@ -31,7 +31,7 @@ function AdminFeedBack() {
     return (
         <>
             <Helmet>
-                <title>Write Feedback | Nexus Sports</title>
+                <title>Write Feedback | Sports Camp</title>
             </Helmet>
             <div className='px-10 bg-base-200'>
                 <div className="hero min-h-screen">

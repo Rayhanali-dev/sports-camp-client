@@ -41,7 +41,7 @@ function SelectedClasses() {
     return (
         <>
             <Helmet>
-                <title> Selected Classes | Nexus Sports</title>
+                <title> Selected Classes | Sports Camp</title>
             </Helmet>
             <div className="my-8">
                 <Title heading={"My Selected Classes"} subHeading={"You can pay or remove classes from here"} />

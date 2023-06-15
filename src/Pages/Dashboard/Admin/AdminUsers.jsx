@@ -59,7 +59,7 @@ function AdminUsers() {
   return (
     <>
       <Helmet>
-        <title>Manage Users | Nexus Sports</title>
+        <title>Manage Users | Sports Camp</title>
       </Helmet>
       <div className="my-8">
         <Title heading={"Manage Users"} subHeading={"You can manage all users from here"} />

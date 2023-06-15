@@ -18,7 +18,7 @@ function InstructorClasses() {
     return (
         <>
             <Helmet>
-                <title>My Classes | Nexus Sports</title>
+                <title>My Classes | Sports Camp</title>
             </Helmet>
             <div className="my-8">
                 <Title heading={"My Classes"} subHeading={"You can manage your classes from here"} />

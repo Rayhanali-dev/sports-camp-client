@@ -7,10 +7,10 @@ const FAQ = () => {
                 <div className="collapse collapse-arrow mb-7 bg-teal-600">
                     <input type="checkbox" />
                     <div className="collapse-title text-xl font-medium">
-                        Why Nexus Sports is best?
+                        Why Sports Camp is best?
                     </div>
                     <div className="collapse-content">
-                        <p>Our instructor are athletic, they know hidden secret to win. </p>
+                        <p>Our instructor are athletic, they know hidden secret to win.</p>
                     </div>
                 </div>
                 <div className="collapse collapse-arrow mb-7 bg-teal-600">

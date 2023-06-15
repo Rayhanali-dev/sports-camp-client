@@ -61,7 +61,7 @@ function AdminClasses() {
   return (
     <>
       <Helmet>
-        <title>Manage Classes | Nexus Sports</title>
+        <title>Manage Classes | Sports Camp</title>
       </Helmet>
       <div className="my-8">
         <Title heading={"Manage Classes"} subHeading={"You can manage all classes from here"} />
