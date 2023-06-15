@@ -8,7 +8,7 @@ function FourOFour() {
     return (
         <>
             <Helmet>
-                <title>404 | Nexus Sports</title>
+                <title>404 | Sports Camp</title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200" style={{ backgroundImage: `url(${fourOfourBgImg})` }}>
                 <div className="hero-overlay bg-opacity-60"></div>

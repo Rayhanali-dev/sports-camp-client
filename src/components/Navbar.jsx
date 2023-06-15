@@ -12,7 +12,7 @@ function Navbar() {
     const [isInstructor, setIsInstructor] = useState(false);
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:5000/users/${user.email}`)
+            fetch(`https://sports-camp-rayhanali-dev.vercel.app/users/${user.email}`)
                 .then(res => res.json())
                 .then(user => {
                     if (user.role == "admin") {

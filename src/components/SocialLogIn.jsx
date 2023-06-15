@@ -16,7 +16,7 @@ function SocialLogIn() {
         .then(result => {
             const loggedInUser = result.user;
             const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email, role: "student" , image: loggedInUser.photoURL}
-            axios.post('http://localhost:5000/users', saveUser)
+            axios.post('https://sports-camp-rayhanali-dev.vercel.app/users', saveUser)
             .then(data => {
                 toast.success('LoggedIn Successfully')
                 navigate(from, { replace: true });

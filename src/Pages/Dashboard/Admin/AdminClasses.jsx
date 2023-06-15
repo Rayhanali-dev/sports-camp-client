@@ -15,7 +15,7 @@ function AdminClasses() {
   })
 
   const handleApproved = (classData) =>{
-    fetch(`http://localhost:5000/classes/approved/${classData._id}`, {
+    fetch(`https://sports-camp-rayhanali-dev.vercel.app/classes/approved/${classData._id}`, {
       method: 'PATCH'
     })
     .then(res => res.json())
@@ -36,7 +36,7 @@ function AdminClasses() {
 
 
   const handleDenied= (classData) =>{
-    fetch(`http://localhost:5000/classes/denied/${classData._id}`, {
+    fetch(`https://sports-camp-rayhanali-dev.vercel.app/classes/denied/${classData._id}`, {
       method: 'PATCH'
     })
     .then(res => res.json())

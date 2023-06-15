@@ -12,7 +12,7 @@ function AdminFeedBack() {
         const form = e.target;
         const feedbackValue = form.feedback.value;
         const newFeedback = { feedback: feedbackValue }
-        axios.patch(`http://localhost:5000/classes/feedback/${classData._id}`, newFeedback)
+        axios.patch(`https://sports-camp-rayhanali-dev.vercel.app/classes/feedback/${classData._id}`, newFeedback)
             .then(data => {
                 if (data.data.modifiedCount > 0) {
                     Swal.fire({

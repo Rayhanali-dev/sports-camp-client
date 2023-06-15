@@ -12,7 +12,7 @@ function Classs({ classData }) {
     const navigate = useNavigate();
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:5000/users/${user.email}`)
+            fetch(`https://sports-camp-rayhanali-dev.vercel.app/users/${user.email}`)
                 .then(res => res.json())
                 .then(user => {
                     if (user.role == "admin" || user.role == "instructor" || availableSeats == 0) {
@@ -31,7 +31,7 @@ function Classs({ classData }) {
     const handleSelect = (classData) => {
         if (user && user.email) {
             const selectedClass = {classId: classData._id, name: classData.name, image: classData.image, price: classData.price, userEmail: user.email, status: "payable"}
-            axios.post('http://localhost:5000/selected', selectedClass)
+            axios.post('https://sports-camp-rayhanali-dev.vercel.app/selected', selectedClass)
             .then(res =>{
                 if(res.data.insertedId){
                     toast.success("Class Selected Successfully")

@@ -20,7 +20,7 @@ function Register() {
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         const saveUser = { name: data.name, email: data.email, role: "student", image: data.photoURL }
-                        axios.post('http://localhost:5000/users', saveUser)
+                        axios.post('https://sports-camp-rayhanali-dev.vercel.app/users', saveUser)
                             .then(data => {
                                 if (data.data.insertedId) {
                                     reset();
