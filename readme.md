@@ -2,10 +2,10 @@
 
 ## Home page
 * navbar
-*banner
-*Popular Classes
-*Popular Instructors
-*Footer
+* banner
+* Popular Classes
+* Popular Instructors
+* Footer
 
 ## instructor page
 * all instructor 
@@ -16,5 +16,5 @@
 ## Dashboard
 
 ** dashboard admin
-** user: tanjed@admin.com
-**pass: tanjed123!
+* user: tanjed@admin.com
+* pass: tanjed123!
