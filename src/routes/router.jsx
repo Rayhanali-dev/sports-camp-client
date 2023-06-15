@@ -62,7 +62,7 @@ const router = createBrowserRouter([
             {
                 path: "admin/classes/feedback/:id",
                 element: <AdminRoute><AdminFeedBack/></AdminRoute>,
-                loader: ({params}) => {return fetch(`http://localhost:5000/class/${params.id}`)},
+                loader: ({params}) => {return fetch(`https://sports-camp-rayhanali-dev.vercel.app/class/${params.id}`)},
             },
             {
                 path: "admin/users",
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
             {
                 path: "instructor/myClasses/update/:id",
                 element: <InstructorRoute><UpdateClass/></InstructorRoute>,
-                loader: ({params}) => {return fetch(`http://localhost:5000/class/${params.id}`)},
+                loader: ({params}) => {return fetch(`https://sports-camp-rayhanali-dev.vercel.app/class/${params.id}`)},
             },
             {
                 path: "selectedClasses",
@@ -88,7 +88,7 @@ const router = createBrowserRouter([
             {
                 path: "selectedClasses/payment/:id",
                 element: <PrivateRoute><Payment/></PrivateRoute>,
-                loader: ({params}) => {return fetch(`http://localhost:5000/selected/class/${params.id}`)},
+                loader: ({params}) => {return fetch(`https://sports-camp-rayhanali-dev.vercel.app/selected/class/${params.id}`)},
             },
             {
                 path: "enrolledClasses",
