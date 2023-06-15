@@ -1,11 +1,18 @@
-import React from 'react';
+import { Toaster } from 'react-hot-toast'
+import './App.css'
+import Main from './layouts/Main'
 
-const App = () => {
+function App() {
+
   return (
-    <div>
-      <h3>hello</h3>
-    </div>
-  );
-};
+    <>
+      <Main />
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
+    </>
+  )
+}
 
-export default App;
+export default App
