@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 function SelectedClasses() {
     const [selectedClasses, refetch] = useSelectedClasses();
-
+    
     const handleDelete = (classData) => {
         Swal.fire({
             title: 'Are you sure?',
