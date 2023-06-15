@@ -10,11 +10,11 @@
 ## instructor page
 * all instructor 
 
-##classess page
+## classess page
 * all classess added
 
 ## Dashboard
 
-** dashboard admin
+### dashboard admin
 * user: tanjed@admin.com
 * pass: tanjed123!
