@@ -21,7 +21,6 @@ function DashboardNavbar() {
                         isAdmin ? <span className='text-xs'> (Admin)</span>
                             : isInstructor ? <span className='text-xs'> (Instructor)</span>
                                 : <span className='text-xs'> (Student)</span>
-
                     }
                 </p>
                 <p className='text-md'>{user.email}</p>
@@ -50,7 +49,7 @@ function DashboardNavbar() {
         <>
             <div className="navbar bg-base-100 px-8 shadow-xl z-50">
                 <div className="navbar-start">
-                    
+
                     <a className="btn btn-ghost normal-case text-xl hidden md:flex">Sports Camp</a>
                 </div>
                 <div className="navbar-center">
