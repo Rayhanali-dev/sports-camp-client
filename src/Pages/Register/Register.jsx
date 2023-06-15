@@ -13,9 +13,6 @@ function Register() {
     const navigate = useNavigate();
     const password = useRef({});
     password.current = watch('password', '');
-    const handleTogglePassword = () => {
-        setShowPassword(!showPassword);
-    };
     const onSubmit = data => {
         createUser(data.email, data.password)
             .then(result => {
@@ -102,7 +99,7 @@ function Register() {
                                         {errors.photoURL && <span className="text-red-600">Photo URL is required</span>}
                                     </div>
                                     <div className="form-control mt-6">
-                                        <input type='submit' className="btn btn btn-primary text-white" value="Register" />
+                                        <input type='submit' className="btn btn-primary text-white" value="Register" />
                                     </div>
                                 </form>
                                 <p className='text-center py-2'>Are you already a Sports Camp member ?  <Link to="/login" className='text-green-500 hover:text-green-800 underline '>Log In</Link> now.</p>
