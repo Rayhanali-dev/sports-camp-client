@@ -9,7 +9,7 @@ function EnrolledClasses() {
   return (
     <>
       <Helmet>
-        <title> Enrolled Classes | Nexus Sports</title>
+        <title> Enrolled Classes | Sports Camp</title>
       </Helmet>
       <div className="my-8">
         <Title heading={"My Enrolled Classes"} subHeading={"You can see your enrolled classes here"} />

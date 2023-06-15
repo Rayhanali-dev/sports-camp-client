@@ -12,7 +12,7 @@ function PaymentHistory() {
   return (
     <div>
       <Helmet>
-        <title>Payment History| Nexus Sports</title>
+        <title>Payment History| Sports Camp</title>
       </Helmet>
       <div className="my-8">
         <Title heading={"Payment History"} subHeading={"You can see your payment history here"} />
