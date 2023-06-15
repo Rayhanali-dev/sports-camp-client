@@ -9,9 +9,8 @@ function PaymentHistory() {
   const formatDateTime = (date) => {
     return moment(date).format('HH:mm:ss,  DD-MM-YYYY');
   };
-
   return (
-    <>
+    <div>
       <Helmet>
         <title>Payment History| Nexus Sports</title>
       </Helmet>
@@ -32,7 +31,7 @@ function PaymentHistory() {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
+            {/* row 1 start*/}
             {
 
               paymentHistory.map((classData, index) =>
@@ -53,10 +52,11 @@ function PaymentHistory() {
                   <td className='text-center'>{formatDateTime(classData.date)}</td>
                 </tr>)
             }
+            {/* row 1 end */}
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   )
 }
 
