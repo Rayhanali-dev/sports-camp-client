@@ -17,4 +17,4 @@
 
 ### dashboard admin
 * user: tanjed@admin.com
-* pass: tanjed123!
+* pass: Rayhan123@

@@ -9,6 +9,7 @@ import Class from './Classs';
 
 const Classes = () => {
     const [classes, loading] = useClasses();
+    
     return (
         <div className='max-w-7xl mx-auto'>
             <Helmet>
